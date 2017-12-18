@@ -57,6 +57,10 @@ connect is [UP]
     $ mvn clean compile install -DskipTests
     ```
 
+    > Tip:  When using a Maven proxy/mirror in your company such as Artifactory you must make sure that it is
+    > configured correctly to retrieve snapshot artifacts and access snapshot repositories.  See
+    > [Could not find artifact](https://github.com/confluentinc/ksql/issues/537) for more information.
+
 1.  Start KSQL. The `local` argument starts KSQL in [standalone mode](/docs/concepts.md#modes-of-operation).
 
     ```bash
